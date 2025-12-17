@@ -1,5 +1,4 @@
-use crate::state::Pool;
-use anchor_lang::prelude::*;
+use {crate::state::Pool, anchor_lang::prelude::*};
 
 /// Accounts for override curve parameters instruction
 #[derive(Accounts)]

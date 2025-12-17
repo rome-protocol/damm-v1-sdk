@@ -1,6 +1,8 @@
-use crate::state::Pool;
-use anchor_lang::prelude::*;
-use anchor_spl::token::{Mint, TokenAccount};
+use {
+    crate::state::Pool,
+    anchor_lang::prelude::*,
+    anchor_spl::token::{Mint, TokenAccount},
+};
 
 #[derive(Accounts)]
 pub struct CreateMintMetadata<'info> {

@@ -1,7 +1,6 @@
 //! Vault and strategy states
 
-use anchor_lang::prelude::*;
-use std::fmt::Debug;
+use {anchor_lang::prelude::*, std::fmt::Debug};
 
 /// Max strategy number that a vault can support
 pub const MAX_STRATEGY: usize = 30;

@@ -1,6 +1,7 @@
-use crate::constants::seeds::CONFIG_PREFIX;
-use crate::state::Config;
-use anchor_lang::prelude::*;
+use {
+    crate::{constants::seeds::CONFIG_PREFIX, state::Config},
+    anchor_lang::prelude::*,
+};
 
 #[derive(AnchorSerialize, AnchorDeserialize)]
 pub struct ConfigParameters {

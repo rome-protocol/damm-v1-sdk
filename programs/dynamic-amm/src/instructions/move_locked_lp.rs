@@ -1,5 +1,4 @@
-use crate::event;
-use anchor_lang::prelude::*;
+use {crate::event, anchor_lang::prelude::*};
 
 /// Accounts for [amm::move_locked_lp].
 #[derive(Accounts)]

@@ -1,7 +1,5 @@
 //! Pool account state
-use crate::constants;
-use anchor_lang::prelude::*;
-use std::fmt::Debug;
+use {crate::constants, anchor_lang::prelude::*, std::fmt::Debug};
 
 #[derive(AnchorSerialize, AnchorDeserialize, Default, Debug, Clone, Copy)]
 /*

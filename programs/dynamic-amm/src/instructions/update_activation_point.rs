@@ -1,5 +1,7 @@
-use crate::{error::PoolError, state::Pool};
-use anchor_lang::prelude::*;
+use {
+    crate::{error::PoolError, state::Pool},
+    anchor_lang::prelude::*,
+};
 
 /// Accounts for update activation point
 #[derive(Accounts)]

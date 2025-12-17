@@ -1,5 +1,4 @@
-use crate::state::Config;
-use anchor_lang::prelude::*;
+use {crate::state::Config, anchor_lang::prelude::*};
 
 #[derive(Accounts)]
 pub struct CloseConfig<'info> {

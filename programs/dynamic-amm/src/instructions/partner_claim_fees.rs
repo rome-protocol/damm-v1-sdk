@@ -1,6 +1,8 @@
-use crate::{error::PoolError, event::PartnerClaimFees as PartnerClaimFeesEvent, state::Pool};
-use anchor_lang::prelude::*;
-use anchor_spl::token::{transfer, Token, TokenAccount, Transfer};
+use {
+    crate::{error::PoolError, event::PartnerClaimFees as PartnerClaimFeesEvent, state::Pool},
+    anchor_lang::prelude::*,
+    anchor_spl::token::{transfer, Token, TokenAccount, Transfer},
+};
 
 /// Accounts for partner to claim fees
 #[derive(Accounts)]

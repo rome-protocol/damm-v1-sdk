@@ -8,12 +8,12 @@
 pub mod seed;
 pub mod state;
 
-use std::str::FromStr;
-
-use anchor_lang::prelude::*;
-use anchor_spl::token::{Mint, Token, TokenAccount};
-
-use state::Vault;
+use {
+    anchor_lang::prelude::*,
+    anchor_spl::token::{Mint, Token, TokenAccount},
+    state::Vault,
+    std::str::FromStr,
+};
 
 declare_id!("24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi");
 

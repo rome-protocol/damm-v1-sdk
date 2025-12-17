@@ -1,9 +1,10 @@
-use crate::get_lp_mint_decimal;
-use crate::{get_first_key, get_second_key, state::*};
-use anchor_lang::prelude::*;
-use anchor_spl::{
-    associated_token::AssociatedToken,
-    token::{Mint, Token, TokenAccount},
+use {
+    crate::{get_first_key, get_lp_mint_decimal, get_second_key, state::*},
+    anchor_lang::prelude::*,
+    anchor_spl::{
+        associated_token::AssociatedToken,
+        token::{Mint, Token, TokenAccount},
+    },
 };
 
 #[derive(Accounts)]

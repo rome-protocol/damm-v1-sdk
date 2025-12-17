@@ -1,7 +1,5 @@
 //! Event module includes information about events of the program
-use anchor_lang::prelude::*;
-
-use crate::state::PoolType;
+use {crate::state::PoolType, anchor_lang::prelude::*};
 
 /// Add liquidity event
 #[event]

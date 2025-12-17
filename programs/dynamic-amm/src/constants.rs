@@ -1,6 +1,5 @@
 //! Constants module includes constants value of the program
-use anchor_lang::prelude::*;
-use anchor_lang::solana_program::pubkey;
+use anchor_lang::{prelude::*, solana_program::pubkey};
 
 /// Minimum seconds between last AMP changes
 pub const MIN_CHANGE_AMP_DURATION: u64 = 600; // 10 minutes

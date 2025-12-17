@@ -12,10 +12,11 @@ pub mod instructions;
 pub mod seed;
 pub mod state;
 
-use crate::state::CurveType;
-use crate::state::PoolFees;
-use anchor_lang::prelude::*;
-use instructions::*;
+use {
+    crate::state::{CurveType, PoolFees},
+    anchor_lang::prelude::*,
+    instructions::*,
+};
 #[cfg(feature = "staging")]
 declare_id!("ammbh4CQztZ6txJ8AaQgPsWjd6o7GhmvopS2JAo5bCB");
 

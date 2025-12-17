@@ -1,7 +1,8 @@
-use crate::state::*;
-use anchor_lang::prelude::*;
-use anchor_spl::token::Mint;
-use anchor_spl::token::TokenAccount;
+use {
+    crate::state::*,
+    anchor_lang::prelude::*,
+    anchor_spl::token::{Mint, TokenAccount},
+};
 
 /// get first key, this is same as max(key1, key2)
 pub fn get_first_key(key1: Pubkey, key2: Pubkey) -> Pubkey {

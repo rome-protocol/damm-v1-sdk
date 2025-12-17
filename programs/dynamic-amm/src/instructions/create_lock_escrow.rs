@@ -1,5 +1,4 @@
-use crate::state::LockEscrow;
-use anchor_lang::prelude::*;
+use {crate::state::LockEscrow, anchor_lang::prelude::*};
 
 /// Accounts for create lock account instruction
 #[derive(Accounts)]

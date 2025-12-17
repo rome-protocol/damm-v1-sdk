@@ -1,10 +1,13 @@
 // use crate::macros::pool_seeds;
 
-use crate::get_lp_mint_decimal;
-use crate::state::*;
-use anchor_lang::prelude::*;
-use anchor_spl::associated_token::AssociatedToken;
-use anchor_spl::token::{Mint, Token, TokenAccount};
+use {
+    crate::{get_lp_mint_decimal, state::*},
+    anchor_lang::prelude::*,
+    anchor_spl::{
+        associated_token::AssociatedToken,
+        token::{Mint, Token, TokenAccount},
+    },
+};
 
 /// Permissioned Initialize
 /// Accounts for initialize new pool instruction

@@ -1,15 +1,17 @@
-use crate::{
-    constants::{activation::*, fee::*, QUOTE_MINTS},
-    error::PoolError,
-    get_first_key, get_lp_mint_decimal, get_second_key,
-    state::Pool,
+use {
+    crate::{
+        constants::{activation::*, fee::*, QUOTE_MINTS},
+        error::PoolError,
+        get_first_key, get_lp_mint_decimal, get_second_key,
+        state::Pool,
+    },
+    anchor_lang::prelude::*,
+    anchor_spl::{
+        associated_token::AssociatedToken,
+        token::{Mint, Token, TokenAccount},
+    },
+    std::u64,
 };
-use anchor_lang::prelude::*;
-use anchor_spl::{
-    associated_token::AssociatedToken,
-    token::{Mint, Token, TokenAccount},
-};
-use std::u64;
 
 #[derive(Accounts)]
 pub struct InitializeCustomizablePermissionlessConstantProductPool<'info> {

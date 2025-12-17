@@ -16,6 +16,6 @@ crate-type = ["cdylib", "lib"]
 name = "dynamic_amm"
 
 [dependencies]
-anchor-lang = { version = "0.31.1", features = ["event-cpi"] }
-anchor-spl = "0.31.1"
-solana-program = "2.1.7"
+anchor-lang = { version = "0.32.1", features = ["event-cpi"] }
+anchor-spl = "0.32.1"
+solana-program = "3.0.0"
